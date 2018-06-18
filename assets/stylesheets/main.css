@@ -2,7 +2,7 @@
   License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
+html, body, div, span, applet, object, iframe, 
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
@@ -44,4 +44,29 @@ q:before, q:after {
 table {
   border-collapse: collapse;
   border-spacing: 0;
+}
+
+h1 {
+	font-size: 200%;
+	font-family: "Gill Sans", sans-serif;
+	margin: 20px 0;
+	text-align: center;
+	padding: 10px;
+}
+
+p, nav {
+	text-align: center;
+	margin: 20px 0;
+}
+
+body {
+	background: grey;
+}
+
+nav a {
+  text-decoration: none;
+  background: #333;
+  border-radius: 5px;
+  color: white;
+  padding: 3px 8px;
 }
