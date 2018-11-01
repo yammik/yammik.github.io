@@ -3,6 +3,8 @@
   color: #444;
 }
 
+
+
 #logo {
   border-color: #444;
   border-width: 1px;
@@ -19,8 +21,12 @@ a {
 }
 
 ul {
+  position: absolute;
+  top: 80px;
   list-style: none;
+  margin: 10px;
 }
+
 
 .menu {
   animation: slide-left 0.5s;
@@ -30,3 +36,22 @@ ul {
   from { margin-left: -10px; }
   to { margin-left: 0px;}
 }
+
+li {
+  margin-bottom: 8px;
+  padding-left: 0;
+  transition: padding-left 0.3s;
+  transition-property: padding-left;
+  transition-duration: 0.3s;
+  transition-timing-function: ease;
+  transition-delay: 0s;
+}
+
+li:hover {
+  padding-left: 10px;
+}
+
+/* @keyframes slide-more {
+  from { margin-left: 0px; }
+  to { margin-left: 5px;}
+} */
