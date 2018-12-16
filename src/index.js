@@ -17,6 +17,6 @@ document.addEventListener('DOMContentLoaded', () => {
     $('.content div').each(function(i) {
       $(this).hide(0);
     })
-    $(`#${component}`).show();
+    $(`#${component}`).fadeIn(1000);
   })
 })
