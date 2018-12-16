@@ -3,8 +3,6 @@
   color: #444;
 }
 
-
-
 #logo {
   border-color: #444;
   border-width: 1px;
@@ -18,17 +16,18 @@
 
 a {
   text-decoration: none;
+  cursor: crosshair;
 }
 
 ul {
-  position: absolute;
+  /* position: absolute; */
   top: 80px;
   list-style: none;
   margin: 10px;
 }
 
 
-.menu {
+.menuItem {
   animation: slide-left 0.5s;
 }
 
@@ -41,17 +40,21 @@ li {
   margin-bottom: 8px;
   padding-left: 0;
   transition: padding-left 0.3s;
-  transition-property: padding-left;
-  transition-duration: 0.3s;
   transition-timing-function: ease;
   transition-delay: 0s;
 }
 
 li:hover {
   padding-left: 10px;
+  color: #ccc;
 }
 
-/* @keyframes slide-more {
-  from { margin-left: 0px; }
-  to { margin-left: 5px;}
-} */
+.container {
+  display: flex;
+}
+
+.content {
+  padding: 65px;
+  position: fixed;
+  left: 150px;
+}

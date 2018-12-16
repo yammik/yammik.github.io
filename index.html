@@ -9,20 +9,34 @@
     <link href="./assets/stylesheets/main.css" rel="stylesheet">
   </head>
   <body>
-    <header>
       <div class="container">
-        <div id="logo">
-          <a href="#">yammik</a>
-        </div>
-        <nav>
+        <div class="navbar">
+          <div id="logo">
+            <a href="#">yammik</a>
+          </div> <!-- end #logo -->
           <ul>
-            <li class="menu"><a href="#whoami">whoami</a></li>
-            <li class="menu"><a href="#app">app</a></li>
-            <li class="menu"><a href="#pub">pub</a></li>
-            <li class="menu"><a href="#art">art</a></li>
+            <li class="menuItem"><a id="whoamiLink" >whoami</a></li>
+            <li class="menuItem"><a id="appLink" >app</a></li>
+            <li class="menuItem"><a id="pubLink" >pub</a></li>
+            <li class="menuItem"><a id="artLink" >art</a></li>
           </ul>
-        </nav>
-      </div>
-    </header>
+        </div> <!-- end .navbar -->
+        <div class="content">
+          <div id="whoami">
+            name, intro, stuff
+            also personal experience?
+          </div> <!-- end #whoami -->
+          <div id="app">
+            corresponds to technical projects
+          </div> <!-- end #app -->
+          <div id="pub">
+            maybe remove? pretty irrelevant now
+          </div> <!-- end #pub -->
+          <div id="art">
+            drawings, logo design, photography
+          </div> <!-- end #art -->
+        </div>
+      </div> <!-- end .container -->
+
   </body>
 </html>
