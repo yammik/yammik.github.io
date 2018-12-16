@@ -1,6 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
   $('.content div').each(function(i) {
     $(this).hide(0);
+    $('#landing').fadeIn(1000);
   })
   $("#logo").fadeOut(0, function() {
     setTimeout(function () {
