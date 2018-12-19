@@ -87,10 +87,17 @@ button:focus {
   outline: none;
 }
 
+img {
+  width: 100%;
+  height: auto;
+}
+
 .navbar {
   display: flex;
   position: fixed;
   width: 100%;
+  background: white;
+  z-index: 10;
 }
 
 .content {
