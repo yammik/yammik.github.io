@@ -86,6 +86,9 @@ button {
 button:focus {
   outline: none;
 }
+button:hover {
+  color: #ff8080;
+}
 
 .navbar {
   display: flex;
