@@ -87,11 +87,6 @@ button:focus {
   outline: none;
 }
 
-img {
-  width: 100%;
-  height: auto;
-}
-
 .navbar {
   display: flex;
   position: fixed;
@@ -116,6 +111,10 @@ img {
   transition: max-height 0.2s ease-out;
 }
 
+img {
+  width: 100%;
+  height: auto;
+}
 
 @media only screen and (min-width: 768px) {
   /* for desktop */
@@ -125,23 +124,27 @@ img {
     margin: 10px;
   }
 
-  .container {
-    display: flex;
-  }
-
   .navbar, ul {
     display: block;
     width: auto;
   }
 
-  #logo {
-    padding: 10px 18px;
-  }
-
   .content {
-    padding: 64px;
     left: 100px;
     width: auto;
+    top: 0;
+  }
+
+  img {
+    width: auto;
+  }
+
+  .container {
+    display: flex;
+  }
+
+  #logo {
+    padding: 10px 18px;
   }
 }
 
