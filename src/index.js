@@ -7,10 +7,12 @@ function getEmoji() {
 }
 
 function randomCoords() {
-  const leftPx = Math.random()*$(window).width()+"px";
-  const topPx = Math.random()*$(window).height()-10+"px";
+  // need to subtract width/height of the div so the right/bottom of the div doesn't go beyond screen
+  const leftPx = Math.random()*($(window).width()-$('#catchMe').width())+"px";
+  const topPx = Math.random()*($(window).height()-$('#catchMe').height())+"px";
   return `left: ${leftPx}; top: ${topPx};`
 }
+
 
 document.addEventListener('DOMContentLoaded', () => {
   $('.content div').each(function(i) {
@@ -23,9 +25,13 @@ document.addEventListener('DOMContentLoaded', () => {
     }, 0);
   });
 
+  // clicking on logo will reload page
   $("#logo").on('click', () => {
     window.location.reload();
   })
+
+  // re-populate #catchEmAll with previously caught emojimons in case of accidental refresh
+  $("#catchEmAll")[0].innerText = sessionStorage.getItem('emojimons');
 
   // initial encounter with random emoji
   const catchMe = $("#catchMe")[0]
@@ -48,6 +54,9 @@ document.addEventListener('DOMContentLoaded', () => {
   $("#catchMe").on('click', function(e) {
     const youCaughtMe = e.target.innerText;
     $("#catchEmAll")[0].innerText += youCaughtMe;
+
+    const oldEmojidex = sessionStorage.getItem('emojimons');
+    sessionStorage.setItem('emojimons', [...oldEmojidex, youCaughtMe]);
     // get new emoji
     e.target.innerText = getEmoji();
     // emoji flees!
