@@ -14,8 +14,7 @@ function randomCoords() {
 }
 
 $(function() {
-  // $('.content')[0].style.height = `${$(window).height()}px`;
-  $('.content div').each(function(i) {
+  $('.content>div').each(function(i) {
     $(this).hide(0);
     $('#landing').fadeIn(1000);
   })
@@ -30,6 +29,10 @@ $(function() {
     window.location.reload();
   })
 
+	$(".menu").each(function(i) {
+		$(this).fadeOut(0, () => setTimeout(() => $(this).fadeIn(Math.random()*1500), 0))
+	})
+
   // re-populate #catchEmAll with previously caught emojimons in case of accidental refresh
   let emojiDex = sessionStorage.getItem('emojimons');
   $("#catchEmAll")[0].innerText = emojiDex ? emojiDex.replace('null', '') : '';
@@ -40,24 +43,30 @@ $(function() {
   catchMe.style = randomCoords();
   $('body').append(catchMe);
 
-  $(".menu").each(function(i) {
-    $(this).fadeOut(0, () => setTimeout(() => $(this).fadeIn(Math.random()*1500), 0))
-  })
-
   $(".menuLink").on('click', function(e) {
-		$("#landing").hide();
     const componentId = e.target.id.replace('Link', '');
-		console.log(componentId);
     $('.content > div').each(function(i) {
       if (this.id !== componentId) {
         $(this).hide();
       }
     })
-		const showId = `#${componentId}`;
-		console.log(showId);
-    $(showId).fadeIn(500);
+		const showingId = `#${componentId}`;
+		console.log(showingId);
+    $(showingId).fadeIn(500);
   })
 
+	$("button.collapsible").each(function(i) {
+		$(this).on('click', function(e) {
+			var content = this.nextElementSibling;
+	    if (content.style.maxHeight){
+	      content.style.maxHeight = null;
+	    } else {
+	      content.style.maxHeight = content.scrollHeight + "px";
+	    }
+		})
+	})
+
+	// lowkey minigame
   $("#catchMe").on('click', function(e) {
     const youCaughtMe = e.target.innerText;
     $("#catchEmAll")[0].innerText += youCaughtMe;
@@ -71,5 +80,3 @@ $(function() {
   })
 
 })
-// document.addEventListener('DOMContentLoaded', () => )
-// //

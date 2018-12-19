@@ -47,6 +47,14 @@ a {
   color: #ff8080;
 }
 
+.collapseContent {
+  /* padding: 0 18px; */
+  /* background-color: white; */
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
 #logo a {
   color: inherit;
 }
