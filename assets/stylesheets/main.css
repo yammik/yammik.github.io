@@ -19,17 +19,56 @@ body {
   display: inline-block;
   font-weight: lighter;
   margin: 10px;
+  transition: border-color, color 0.3s;
+}
+
+#logo:hover {
+  border-color: #bbb;
+  color: #bbb;
 }
 
 a {
   text-decoration: none;
 }
 
+#logo a {
+  color: inherit;
+}
+
+/* for mobile, navbar should span top */
 ul {
-  /* position: absolute; */
-  top: 80px;
   list-style: none;
   margin: 10px;
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.navbar {
+  display: flex;
+}
+
+
+
+/* in mobile, navbar gets flex not container */
+
+
+@media only screen and (min-width: 768px) {
+  /* for desktop, navbar is on left */
+  ul {
+    top: 80px;
+    list-style: none;
+    margin: 10px;
+  }
+
+  .container {
+    display: flex;
+  }
+
+  .navbar, ul {
+    display: block;
+  }
+
 }
 
 .menuItem {
@@ -54,9 +93,7 @@ li:hover {
   color: #ccc;
 }
 
-.container {
-  display: flex;
-}
+
 
 .content {
   padding: 65px;
