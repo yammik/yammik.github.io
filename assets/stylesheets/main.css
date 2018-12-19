@@ -76,5 +76,5 @@ li:hover {
   text-align: center;
   opacity: 0.2;
   position: absolute;
-  cursor: grab;
+  cursor: default;
 }
