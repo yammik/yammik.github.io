@@ -31,11 +31,13 @@ document.addEventListener('DOMContentLoaded', () => {
     $(`#${component}`).fadeIn(500);
 
     // add div with id="catchMe"
+
   })
 
   $("#catchMe").on('click', function(e) {
     const youCaughtMe = e.target.innerText;
     $("#catchEmAll")[0].innerText += youCaughtMe;
+    e.target.innerText = getEmoji();
   })
 
 })
