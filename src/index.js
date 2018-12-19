@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
   })
 
   // re-populate #catchEmAll with previously caught emojimons in case of accidental refresh
-  $("#catchEmAll")[0].innerText = sessionStorage.getItem('emojimons');
+  $("#catchEmAll")[0].innerText = sessionStorage.getItem('emojimons').replace('null','');
 
   // initial encounter with random emoji
   const catchMe = $("#catchMe")[0]
@@ -56,7 +56,7 @@ document.addEventListener('DOMContentLoaded', () => {
     $("#catchEmAll")[0].innerText += youCaughtMe;
 
     const oldEmojidex = sessionStorage.getItem('emojimons');
-    sessionStorage.setItem('emojimons', [...oldEmojidex, youCaughtMe]);
+    sessionStorage.setItem('emojimons', oldEmojidex+youCaughtMe);
     // get new emoji
     e.target.innerText = getEmoji();
     // emoji flees!
