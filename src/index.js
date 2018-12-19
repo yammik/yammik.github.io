@@ -8,7 +8,7 @@ function getEmoji() {
 
 function randomCoords() {
   const leftPx = Math.random()*$(window).width()+"px";
-  const topPx = Math.random()*$(window).height()+"px";
+  const topPx = Math.random()*$(window).height()-10+"px";
   return `left: ${leftPx}; top: ${topPx};`
 }
 
@@ -22,6 +22,10 @@ document.addEventListener('DOMContentLoaded', () => {
       $("#logo").fadeIn(1000);
     }, 0);
   });
+
+  $("#logo").on('click', () => {
+    window.location.reload();
+  })
 
   // initial encounter with random emoji
   const catchMe = $("#catchMe")[0]
