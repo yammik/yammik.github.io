@@ -15,6 +15,7 @@ function randomCoords() {
 
 
 document.addEventListener('DOMContentLoaded', () => {
+  $('.content')[0].style.height = `${$(window).height()}px`;
   $('.content div').each(function(i) {
     $(this).hide(0);
     $('#landing').fadeIn(1000);
@@ -31,7 +32,7 @@ document.addEventListener('DOMContentLoaded', () => {
   })
 
   // re-populate #catchEmAll with previously caught emojimons in case of accidental refresh
-  const emojiDex = sessionStorage.getItem('emojimons');
+  let emojiDex = sessionStorage.getItem('emojimons');
   $("#catchEmAll")[0].innerText = emojiDex ? emojiDex.replace('null', '') : '';
 
   // initial encounter with random emoji
@@ -45,11 +46,13 @@ document.addEventListener('DOMContentLoaded', () => {
   })
 
   $(".menuItem").on('click', function(e) {
-    const component = e.target.id.replace('Link','');
+    const componentId = e.target.id.replace('Link','');
     $('.content div').each(function(i) {
-      $(this).hide(0);
+      if (this.id !== componentId) {
+        $(this).hide();
+      }
     })
-    $(`#${component}`).fadeIn(500);
+    $(`#${componentId}`).fadeIn(500);
   })
 
   $("#catchMe").on('click', function(e) {
