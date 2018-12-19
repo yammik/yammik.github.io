@@ -15,7 +15,7 @@ function randomCoords() {
 
 
 document.addEventListener('DOMContentLoaded', () => {
-  $('.content')[0].style.height = `${$(window).height()}px`;
+  // $('.content')[0].style.height = `${$(window).height()}px`;
   $('.content div').each(function(i) {
     $(this).hide(0);
     $('#landing').fadeIn(1000);

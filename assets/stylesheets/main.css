@@ -49,12 +49,16 @@ ul {
 
 .navbar {
   display: flex;
+  position: fixed;
+  width: 100%;
 }
 
 .content {
   padding: 24px 64px;
   overflow-y: scroll;
   width: 100%;
+  position: absolute;
+  left: 100px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -71,6 +75,7 @@ ul {
 
   .navbar, ul {
     display: block;
+    width: auto;
   }
 
   #logo {
@@ -105,23 +110,19 @@ li:hover {
   color: #ccc;
 }
 
-
-
 #catchEmAll {
   width: 100%;
-  height: 50px;
-  position: absolute;
+  height: 24px;
   bottom: 0;
-  overflow-x: scroll;
-  overflow-y: hidden;
-  text-overflow: ellipsis;
+  position: fixed;
 }
 
 #catchMe {
   display: inline-block;
   text-align: center;
   opacity: 0.2;
-  position: absolute;
+  /* position: absolute; */
+  position: fixed;
   cursor: default;
   transition: opacity 0.2s;
 }
