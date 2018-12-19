@@ -77,4 +77,5 @@ li:hover {
   opacity: 0.2;
   position: absolute;
   cursor: default;
+  z-index: 999;
 }
