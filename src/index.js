@@ -44,8 +44,9 @@ $(function() {
   $('body').append(catchMe);
 
   $(".menuLink").on('click', function(e) {
+		$("#landing").hide();
     const componentId = e.target.id.replace('Link', '');
-    $('.content > div').each(function(i) {
+    $('.content>div').each(function(i) {
       if (this.id !== componentId) {
         $(this).hide();
       }
