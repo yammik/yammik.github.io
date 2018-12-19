@@ -9,6 +9,13 @@ body {
   margin: 0;
 }
 
+::selection {
+  background: #e6e6ff; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: #e6e6ff; /* Gecko Browsers */
+}
+
 #logo {
   border-color: #444;
   border-width: 1px;
@@ -32,7 +39,12 @@ a {
 }
 
 .content a {
-  color: #2e59ab;
+  color: #99ccff;
+  transition: color 0.3s;
+}
+
+.content a:hover {
+  color: #ff8080;
 }
 
 #logo a {
