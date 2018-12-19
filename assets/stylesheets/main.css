@@ -4,6 +4,10 @@
   font-size: 16px;
 }
 
+body {
+  margin: 0;
+}
+
 #logo {
   border-color: #444;
   border-width: 1px;
@@ -13,6 +17,7 @@
   font-size: 1.5em;
   display: inline-block;
   font-weight: lighter;
+  margin: 10px;
 }
 
 a {
@@ -62,16 +67,14 @@ li:hover {
 #catchEmAll {
   width: 100%;
   height: 50px;
-  background: grey;
   position: absolute;
   bottom: 0;
 }
 
 #catchMe {
-  outline: solid 3px red;
   display: inline-block;
   text-align: center;
-  opacity: 0.4;
+  opacity: 0.2;
   position: absolute;
-
+  cursor: grab;
 }

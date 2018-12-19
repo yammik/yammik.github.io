@@ -6,6 +6,12 @@ function getEmoji() {
   return EMOJIS[Math.floor(Math.random()*EMOJIS.length)];
 }
 
+function randomCoords() {
+  const leftPx = Math.random()*$(window).width()+"px";
+  const topPx = Math.random()*$(window).height()+"px";
+  return `left: ${leftPx}; top: ${topPx};`
+}
+
 document.addEventListener('DOMContentLoaded', () => {
   $('.content div').each(function(i) {
     $(this).hide(0);
@@ -17,7 +23,11 @@ document.addEventListener('DOMContentLoaded', () => {
     }, 0);
   });
 
-  $('body').append(`<div id="catchMe">${getEmoji()}</div>`)
+  // initial encounter with random emoji
+  const catchMe = $("#catchMe")[0]
+  catchMe.innerText = getEmoji();
+  catchMe.style = randomCoords();
+  $('body').append(catchMe)
 
   $(".menu").each(function (i) {
     $(this).fadeOut(0, () => setTimeout(() => $(this).fadeIn(Math.random()*1500), 0))
@@ -29,15 +39,15 @@ document.addEventListener('DOMContentLoaded', () => {
       $(this).hide(0);
     })
     $(`#${component}`).fadeIn(500);
-
-    // add div with id="catchMe"
-
   })
 
   $("#catchMe").on('click', function(e) {
     const youCaughtMe = e.target.innerText;
     $("#catchEmAll")[0].innerText += youCaughtMe;
+    // get new emoji
     e.target.innerText = getEmoji();
+    // emoji flees!
+    e.target.style = randomCoords();
   })
 
 })
