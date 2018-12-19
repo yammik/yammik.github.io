@@ -14,7 +14,7 @@ body {
   border-width: 1px;
   border-style: solid;
   border-radius: 1px;
-  padding: 10px 18px 10px 18px;
+  padding: 2px 6px;
   font-size: 1.5em;
   display: inline-block;
   font-weight: lighter;
@@ -52,7 +52,7 @@ ul {
 
 /* in mobile, navbar gets flex not container */
 
-
+/* for desktop */
 @media only screen and (min-width: 768px) {
   /* for desktop, navbar is on left */
   ul {
@@ -67,6 +67,10 @@ ul {
 
   .navbar, ul {
     display: block;
+  }
+
+  #logo {
+    padding: 10px 18px;
   }
 
 }
