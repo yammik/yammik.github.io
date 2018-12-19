@@ -1,6 +1,7 @@
 * {
   font-family: 'Crimson Text', serif;
   color: #444;
+  font-size: 16px;
 }
 
 #logo {
@@ -25,7 +26,6 @@ ul {
   list-style: none;
   margin: 10px;
 }
-
 
 .menuItem {
   animation: slide-left 0.5s;
@@ -57,4 +57,18 @@ li:hover {
   padding: 65px;
   position: fixed;
   left: 150px;
+}
+
+#catchEmAll {
+  width: 100%;
+  height: 50px;
+  background: grey;
+  position: absolute;
+  bottom: 0;
+}
+
+#catchMe {
+  outline: solid 3px red;
+  display: inline-block;
+  text-align: center;
 }
