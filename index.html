@@ -16,24 +16,25 @@
             <a href="#">yammik</a>
           </div> <!-- end #logo -->
           <ul>
-            <li class="menuItem"><a id="whoamiLink" >who</a></li>
-            <li class="menuItem"><a id="appLink" >app</a></li>
-            <li class="menuItem"><a id="blogLink" >blog</a></li>
-            <li class="menuItem"><a id="artLink" >art</a></li>
+            <li class="menuItem"><a class="menuLink" id="whoLink" >who</a></li>
+            <li class="menuItem"><a class="menuLink" id="appLink" >app</a></li>
+            <li class="menuItem"><a class="menuLink" id="blogLink" >blog</a></li>
+            <li class="menuItem"><a class="menuLink" id="artLink" >art</a></li>
           </ul>
         </div> <!-- end .navbar -->
         <div class="content">
           <div id="landing">
-            just me and my family
+            hello welcome
           </div>
-          <div id="whoami">
+          <div id="who">
             <p>
               S. korea (1991 - 2003) -> NY (2003 - present)
             </p>
             <p>
               studied biology in undergrad. Wanted to be a veterinarian at the time, so did not decide on a concentration. which worked out for the best, because I got the best of both worlds.
             </p>
-            <p id="science">
+            <button class="collapsible">biology</button>
+            <div id="science">
               <p>
                 my favorite memories of studying ecology are:
                   (1) running around the campus with a bug net to make my collection for entomology, catching things like <a target="_blank" href="https://www.monarch-butterfly.com/">the monarch butterfly</a>
@@ -50,15 +51,15 @@
               <p>
                 My experience in life sciences was great, but I needed more. I needed a career where I could create things. Beautiful, meaningful things. A friend recommended that I try coding. Thus began my affair with coding.
               </p>
-            </p> <!-- end #science -->
-
+            </div> <!-- end #science -->
+            <button class="collapsible">coding</button>
             <p id="coding">
               <p>
                 Python was my first language (the firsts are always special) (thank you codecademy).
                 Turns out, scientific writing and coding have a lot of similarities (more on that in a future blog post). Constructing ideas and figuring out how to implement them into code quickly became my favorite part of the day.
                 Also, one of the greatest frustrations in the lab was not being able to figure out why experiments went wrong. Debugging was like a dream come true in that sense.
               </p>
-            </p>
+            </p>  <!-- end #coding -->
 
           </div> <!-- end #whoami -->
           <div id="app">

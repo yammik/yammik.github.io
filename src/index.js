@@ -13,8 +13,7 @@ function randomCoords() {
   return `left: ${leftPx}; top: ${topPx};`
 }
 
-
-document.addEventListener('DOMContentLoaded', () => {
+$(function() {
   // $('.content')[0].style.height = `${$(window).height()}px`;
   $('.content div').each(function(i) {
     $(this).hide(0);
@@ -39,20 +38,24 @@ document.addEventListener('DOMContentLoaded', () => {
   const catchMe = $("#catchMe")[0]
   catchMe.innerText = getEmoji();
   catchMe.style = randomCoords();
-  $('body').append(catchMe)
+  $('body').append(catchMe);
 
-  $(".menu").each(function (i) {
+  $(".menu").each(function(i) {
     $(this).fadeOut(0, () => setTimeout(() => $(this).fadeIn(Math.random()*1500), 0))
   })
 
-  $(".menuItem").on('click', function(e) {
-    const componentId = e.target.id.replace('Link','');
-    $('.content div').each(function(i) {
+  $(".menuLink").on('click', function(e) {
+		$("#landing").hide();
+    const componentId = e.target.id.replace('Link', '');
+		console.log(componentId);
+    $('.content > div').each(function(i) {
       if (this.id !== componentId) {
         $(this).hide();
       }
     })
-    $(`#${componentId}`).fadeIn(500);
+		const showId = `#${componentId}`;
+		console.log(showId);
+    $(showId).fadeIn(500);
   })
 
   $("#catchMe").on('click', function(e) {
@@ -68,3 +71,5 @@ document.addEventListener('DOMContentLoaded', () => {
   })
 
 })
+// document.addEventListener('DOMContentLoaded', () => )
+// //
