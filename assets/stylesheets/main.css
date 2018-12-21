@@ -208,3 +208,7 @@ img {
 #catchMe:hover {
   opacity: 0.1;
 }
+
+.project {
+  padding: 20px 5px;
+}
