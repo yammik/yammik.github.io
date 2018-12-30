@@ -176,8 +176,6 @@ img {
   }
 }
 
-
-
 .menuItem {
   animation: slide-left 0.5s;
 }
@@ -207,6 +205,21 @@ img {
 
 #catchMe:hover {
   opacity: 0.1;
+}
+
+#social-media {
+  padding: 40px;
+  font-size:28px;
+}
+
+.social-button {
+  transition: color 0.3s;
+  transition-timing-function: ease;
+  transition-delay: 0s;
+}
+
+.social-button:hover {
+  color: #98D4B9
 }
 
 .project {

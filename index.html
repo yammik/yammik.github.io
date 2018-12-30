@@ -8,6 +8,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script type="text/javascript" src="./src/index.js"></script>
     <link href="./assets/stylesheets/main.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
   <body>
       <div class="container">
@@ -21,20 +22,27 @@
             <li class="menuItem"><a class="menuLink" id="blogLink" >blog</a></li>
             <li class="menuItem"><a class="menuLink" id="artLink" >art</a></li>
           </ul>
+          <div id="social-media">
+            <a href="https://www.linkedin.com/in/may-kim/" class="fa fa-linkedin social-button"></a><br />
+            <a href="https://github.com/yammik" class="fa fa-github social-button"></a><br />
+            <a href="mailto:mkim0514@gmail.com" class="fa fa fa-send social-button"></a><br />
+          </div>
         </div> <!-- end .navbar -->
         <div class="content">
           <div id="landing">
             hello, welcome
           </div>
           <div id="who">
-            <p>
-              I am a full stack web developer primarily on Ruby on Rails and ReactJS.<br />
-              Advocate of poutine, ramen, tacos, and earl grey ice cream.<br />
-              Also called the Mother of Dead Jokes. Like, not morbid jokes. Just...jokes kill the conversation.<br />
-              <br />
+            <div class="bio">
+              <p>
+                I am a full stack web developer primarily on Ruby on Rails and ReactJS.<br />
+                Advocate of poutine, ramen, tacos, and earl grey ice cream.<br />
+                Also called the Mother of Dead Jokes. Like, not morbid jokes. Just...jokes kill the conversation.<br />
+                <br />
 
-              Before becoming a developer, I was in graduate school for microbiology. Here, aside from <strong>building character and grit</strong>, I learned critical thinking, research design, and scientific writing (which is a lot like programmatic thinking).
-            </p>
+                Before becoming a developer, I was in graduate school for microbiology. Here, aside from <strong>building character and grit</strong>, I learned critical thinking, research design, and scientific writing (which is a lot like programmatic thinking).
+              </p>
+            </div>
             <button class="collapsible">-read on about my bio life-</button>
             <div class="collapseContent">
               <p>
@@ -68,10 +76,9 @@
                 The program actually tells me where things went wrong, down to the line? /* mindblown */
               </p>
             </div>  <!-- end #coding -->
-            <button class="collapsible">-currently, I am...-</button>
-            <div class="collapseContent">
+            <div class="bio">
               <p>
-                looking for a position in a team where I can contribute and grow! My main interest is in education and healthcare.<br /><br />
+                Currently, I am looking for a position in a team where I can contribute and grow! My main interest is in education and healthcare.<br /><br />
                 Sometimes I say 'what a time to be alive' jokingly, but in all seriousness. What a time to be alive. The way technology is shaping the world is amazing.<br />
                 Education softwares are changing the way children are taught, in and out of the classroom. And they're the future of our country and the world.<br /><br />
                 Likewise, softwares being used in the healthcare industry can literally save lives in the downstream process. Applications are not just programs for a select few to be familiar with anymore. They have become an integral way of our lives and interactions with the world.<br /><br />
@@ -79,13 +86,14 @@
                 I am excited to provide the skills I have now to contribute to this mission.
               </p>
               <p>
-                You can find me at:
-                <a href="mailto:mkim0514@gmailcom">email</a>
+                You can reach me via:
+                <a href="mailto:mkim0514@gmail.com">email</a>
                 <a href="https://www.linkedin.com/in/may-kim/">linkedin</a>
                 <a href="https://github.com/yammik">github</a>
               </p>
             </div>  <!-- end #coding -->
-
+            <div class="bio">
+            </div>
           </div> <!-- end #whoami -->
           <div id="app">
             <div class="project" id="sandboCSS">
@@ -121,15 +129,16 @@
             </div> <!-- end div for sendDoods -->
             <div class="project" id="wanderlost">
               <h3>
-                <a href="https://send-doods.herokuapp.com/">sendDoods</a>
-                 | send doodles! it's a risqué name but I am a risk taker!
+                <a href="https://yammik.github.io/wanderLost/">wanderLost</a>
+                 | Exploration game on Google Maps Streetview
               </h3>
               <h5><a href="https://www.youtube.com/watch?v=f-yUzT0233k">demo here</a></h5>
               <h5>
-                Built with: ReactJS, Rails, ActionCable, Redis
+                Built with: jQuery, Rails, Google Maps API
               </h5>
               <p>
-                you know the game <a href="https://www.zynga.com/games/draw-something/">DrawSomething</a>? it's like that. With realtime chatting.
+                <!-- <a href="https://github.com/yammik/wanderLost">GitHub</a> -->
+                <a href="https://github.com/yammik/wanderLost" class="fa fa-github" style="font-size:48px;color:red"></a>
               </p>
             </div> <!-- end div for sendDoods -->
 
@@ -149,6 +158,12 @@
                 <div class="blog-body">
                   REALLY cool science stuff. check out the link! more detailed description coming soon
                 </div> <!-- end visual vibrometry blog post -->
+                <div class="blog-title">
+                  <a href="https://medium.com/@may.m.kim/coding-is-a-lot-like-scientific-writing-2de32089a7fd">Coding Is A Lot Like Scientific Writing</a>
+                </div>
+                <div class="blog-body">
+                  I noticed a parallel between scientific writing and coding.
+                </div> <!-- end sci writ blog post -->
               </div>
             </p>
           </div> <!-- end #pub -->
