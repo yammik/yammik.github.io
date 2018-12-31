@@ -126,7 +126,6 @@ button:hover {
 .content {
   padding: 24px 64px;
   overflow-y: scroll;
-  width: 100%;
   position: absolute;
   top: 80px;
 }
