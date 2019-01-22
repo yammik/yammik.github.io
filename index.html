@@ -97,59 +97,89 @@
           <div id="app">
             <button class="collapsible">- SandboCSS -</button>
             <div class="project collapseContent" id="sandboCSS">
-              <h3>
-                <a href="https://sandbocss.herokuapp.com/">sandboCSS</a>
-                 | (pronounced 'sandbox'), a CSS cheatsheet that makes CSS code for you
-              </h3>
-              <h5><a href="https://www.youtube.com/watch?v=K3yHbc09g8o">demo here</a></h5>
-              <h5><a href="https://github.com/yammik/sandbocss">github repo</a></h5>
-              <h5>
-                Built with: ReactJS, resize-and-drag, styled-components, copy-and-paste
-              </h5>
-              <p>
-                classic mode displays most CSS properties you can set on an element in one panel, so you don't have to know what properties you can use beforehand.
-                <br />Once you click on a property, all of the available options appear so you don't have to look it up.
-                <br />Clicking applies the designated style to the currently selected element, so you can see for yourself what a certain CSS property does (or doesn't do).
-              </p>
-              <p>
-                interactive mode is in beta stage. The resize- and reposition-drag are wonky as of the time of this writing.
-                <br />The biggest challenge has been applying CSS style that the use might want on the draggable and resizable element, which already gets some styles from the RnD package. It's a WIP but I <strong>will</strong> make it happen
-              </p>
+
+              <div class="project-title">
+                <h3>
+                  <a href="https://sandbocss.herokuapp.com/">sandboCSS</a>
+                  | (pronounced 'sandbox'), a CSS cheatsheet that makes CSS code for you
+                </h3>
+              </div>
+
+              <div class="project-body">
+                <div class="project-info">
+                  <h5><a href="https://www.youtube.com/watch?v=K3yHbc09g8o">demo here</a></h5>
+                  <a href="https://github.com/yammik/sandbocss" class="fa fa-github"></a>
+                  <h5>
+                    Built with: ReactJS, resize-and-drag, styled-components, copy-and-paste
+                  </h5>
+                </div>
+                <div class="project-description">
+                  <p>
+                    classic mode displays most CSS properties you can set on an element in one panel, so you don't have to know what properties you can use beforehand.
+                    <br />Once you click on a property, all of the available options appear so you don't have to look it up.
+                    <br />Clicking applies the designated style to the currently selected element, so you can see for yourself what a certain CSS property does (or doesn't do).
+                  </p>
+                  <p>
+                    interactive mode is in beta stage. The resize- and reposition-drag are wonky as of the time of this writing.
+                    <br />The biggest challenge has been applying CSS style that the use might want on the draggable and resizable element, which already gets some styles from the RnD package. It's a WIP but I <strong>will</strong> make it happen
+                  </p>
+                </div>
+              </div>
+
             </div> <!-- end div for sandboCSS -->
 
             <button class="collapsible">- Send Doods -</button>
             <div class="project collapseContent" id="sendDoods">
-              <h3>
-                <a href="https://send-doods.herokuapp.com/">sendDoods</a>
-                 | send doodles! it's a risqué name but I am a risk taker!
-              </h3>
-              <h5><a href="https://github.com/yammik/send-doods">github repo (front end)</a></h5>
-              <h5><a href="https://github.com/yammik/send-doods-api">github repo (back end)</a></h5>
-              <h5>
-                Built with: ReactJS, Rails, ActionCable, Redis
-              </h5>
-              <p>
-                you know the game <a href="https://www.zynga.com/games/draw-something/">DrawSomething</a>? it's like that. With realtime chatting.
-              </p>
+              <div class="project-title">
+                <h3>
+                  <a href="https://send-doods.herokuapp.com/">sendDoods</a>
+                  | send doodles! it's a risqué name but I am a risk taker!
+                </h3>
+              </div>
+
+              <div class="project-body">
+                <div class="project-info">
+                  <a href="https://github.com/yammik/send-doods" class="fa fa-github"> front end</a>
+                  <a href="https://github.com/yammik/send-doods-api" class="fa fa-github"> front end</a>
+                  <h5>
+                    Built with: ReactJS, Rails, ActionCable, Redis
+                  </h5>
+                </div>
+                <div class="project-description">
+                  <p>
+                    you know the game <a href="https://www.zynga.com/games/draw-something/">DrawSomething</a>? it's like that. With realtime chatting.
+                  </p>
+                </div>
+              </div>
+
             </div> <!-- end div for sendDoods -->
 
             <button class="collapsible">- wanderLost -</button>
             <div class="project collapseContent" id="wanderlost">
-              <h3>
-                <a href="https://yammik.github.io/wanderLost/">wanderLost</a>
-                 | Exploration game on Google Maps Streetview
-              </h3>
-              <h5><a href="https://www.youtube.com/watch?v=f-yUzT0233k">demo here</a></h5>
-              <h5><a href="https://github.com/yammik/wanderLost">github repo (front end)</a></h5>
-              <h5><a href="https://github.com/yammik/wanderLost_backend">github repo (back end)</a></h5>
-              <h5>
-                Built with: jQuery, Rails, Google Maps API
-              </h5>
-              <p>
-                <!-- <a href="https://github.com/yammik/wanderLost">GitHub</a> -->
-                <a href="https://github.com/yammik/wanderLost" class="fa fa-github" style="font-size:48px;color:red"></a>
-              </p>
-            </div> <!-- end div for sendDoods -->
+              <div class="project-title">
+                <h3>
+                  <a href="https://yammik.github.io/wanderLost/">wanderLost</a>
+                  | Exploration game on Google Maps Streetview
+                </h3>
+              </div>
+              <div class="project-body">
+                <div class="project-info">
+                  <h5><a href="https://www.youtube.com/watch?v=f-yUzT0233k">demo here</a></h5>
+                  <a href="https://github.com/yammik/wanderLost" class="fa fa-github"> front end</a>
+                  <a href="https://github.com/yammik/wanderLost_backend" class="fa fa-github"> back end</a>
+                  <h5>
+                    Built with: jQuery, Rails, Google Maps API
+                  </h5>
+                </div>
+                <div class="project-description">
+                  <p>
+                    <!-- <a href="https://github.com/yammik/wanderLost">GitHub</a> -->
+                    <a href="https://github.com/yammik/wanderLost" class="fa fa-github" style="font-size:24px;"></a>
+                  </p>
+                </div>
+              </div>
+
+            </div> <!-- end div for wanderLost -->
 
           </div> <!-- end #app -->
           <div id="blog">
