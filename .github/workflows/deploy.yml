@@ -25,7 +25,7 @@ jobs:
           touch out/.nojekyll
 
       - name: Deploy
-        uses: yammik/yammik.github.io
+        uses: yammik.github.io/yammik.github.io
         with:
           branch: gh-pages
           folder: out
