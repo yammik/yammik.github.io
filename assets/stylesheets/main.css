@@ -6,8 +6,8 @@
 }
 
 ::-webkit-scrollbar {
-    width: 0px;
-    background: transparent; /* make scrollbar transparent */
+  width: 0px;
+  background: transparent; /* make scrollbar transparent */
 }
 
 .content > div {
@@ -15,7 +15,7 @@
 }
 
 * {
-  font-family: 'Crimson Text', serif;
+  font-family: "Crimson Text", serif;
   color: #444;
   font-size: 20px;
   cursor: crosshair;
@@ -96,7 +96,7 @@ button:before {
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: #98D4B9;
+  background-color: #98d4b9;
   visibility: hidden;
   -webkit-transform: scaleX(0);
   transform: scaleX(0);
@@ -112,7 +112,7 @@ button:focus {
   outline: none;
 }
 button:hover {
-  color: #98D4B9;
+  color: #98d4b9;
 }
 
 .navbar {
@@ -151,7 +151,8 @@ img {
     margin: 10px;
   }
 
-  .navbar, ul {
+  .navbar,
+  ul {
     display: block;
     width: auto;
   }
@@ -180,10 +181,13 @@ img {
 }
 
 @keyframes slide-left {
-  from { margin-left: -10px; }
-  to { margin-left: 0px;}
+  from {
+    margin-left: -10px;
+  }
+  to {
+    margin-left: 0px;
+  }
 }
-
 
 #catchEmAll {
   width: 100%;
@@ -208,7 +212,7 @@ img {
 
 #social-media {
   padding: 40px;
-  font-size:28px;
+  font-size: 28px;
 }
 
 .social-button {
@@ -218,7 +222,7 @@ img {
 }
 
 .social-button:hover {
-  color: #98D4B9
+  color: #98d4b9;
 }
 
 .project {
