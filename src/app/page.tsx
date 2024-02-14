@@ -41,7 +41,7 @@ export default function Home() {
           }}
         >
           <Image
-            src="/penguin_smart.png"
+            src="/yammik.github.io/penguin_smart.png"
             alt="Corgi with glasses"
             width={360}
             height={360}
@@ -51,7 +51,7 @@ export default function Home() {
             priority
           />
           <Image
-            src="/blue_smart.png"
+            src="/yammik.github.io/blue_smart.png"
             alt="Corgi with glasses"
             width={360}
             height={360}
