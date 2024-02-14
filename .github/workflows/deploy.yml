@@ -1,9 +1,5 @@
 name: Node.js CI
 
-runs:
-  using: "node20"
-  main: "main.js"
-
 on:
   push:
     branches: [main]
