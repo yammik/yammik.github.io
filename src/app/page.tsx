@@ -52,7 +52,7 @@ export default function Home() {
           />
           <Image
             src="/yammik.github.io/blue_smart.png"
-            alt="Corgi with glasses"
+            alt="Fluffy corgi with glasses"
             width={360}
             height={360}
             style={{
