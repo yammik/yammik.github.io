@@ -11,12 +11,15 @@ if (isGithubActions) {
   basePath = `/${repo}`;
 }
 
-module.exports = {
+const nextConfig = {
   assetPrefix: assetPrefix,
   basePath: basePath,
   images: {
     loader: "imgix",
     path: 'the "domain" of your Imigix source'
   },
-  output: "export"
+  output: "export",
+  distDir: "out"
 };
+
+export default nextConfig;
