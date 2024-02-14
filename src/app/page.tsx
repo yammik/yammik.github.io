@@ -24,7 +24,7 @@ export default function Home() {
         </div>
         <div
           style={{ gridColumnStart: 2, gridRowStart: 1 }}
-          className="fixed bottom-0 left-0 h-48 w-full items-end justify-center  lg:static lg:h-auto lg:w-auto lg:bg-none"
+          className="fixed bottom-0 left-0 h-48 items-end justify-center lg:static lg:h-auto lg:w-auto lg:bg-none"
         >
           <p>Menu</p>
           <p>Will go</p>
