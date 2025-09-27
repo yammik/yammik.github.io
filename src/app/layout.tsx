@@ -27,21 +27,24 @@ export default function RootLayout({
     <>
       <header className="p-12">
         <nav>
-          <ul>
+          <div className="w-[6rem] h-[6rem] bg-lime-700 mb-4">
+            image will go here
+          </div>
+          <ul className="flex flex-wrap w-[12rem] gap gap-x-2 text-lg font-mono">
             <li>
-              <span>1</span>
+              <sup className="font-extralight text-xs mr-1">1</sup>
               about
             </li>
             <li>
-              <span>2</span>
+              <sup className="font-extralight text-xs mr-1">2</sup>
               resume
             </li>
             <li>
-              <span>3</span>
+              <sup className="font-extralight text-xs mr-1">3</sup>
               contact
             </li>
             <li>
-              <span>4</span>
+              <sup className="font-extralight text-xs mr-1">4</sup>
               random
             </li>
           </ul>
