@@ -2,11 +2,19 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <div className="flex gap-4 items-center flex-col sm:flex-row"></div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center"></footer>
-    </div>
+    <main className="w-full p-12 pt-0 flex justify-between">
+      <div>
+        <h1 className="text-3xl">
+          hi,
+          <span className="block" />
+          i am
+          <span className="block" />
+          may.
+        </h1>
+      </div>
+      <div>
+        <div className="fixed bottom-0 right-[10%] w-[22rem] h-[22rem] bg-lime-700"></div>
+      </div>
+    </main>
   );
 }
