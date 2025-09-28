@@ -2,15 +2,29 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="w-full p-12 pt-0 flex justify-between">
+    <main className="w-1/2 p-12 pt-0 flex justify-between">
       <div>
-        <h1 className="text-3xl">
-          hi,
-          <span className="block" />
-          i am
-          <span className="block" />
-          may.
-        </h1>
+        <div className="pb-[4rem]">
+          <h1 className="text-3xl font-black">
+            hi –
+            <span className="block" />
+            i am
+            <span className="block" />
+            may.
+          </h1>
+        </div>
+        <div>
+          <p className="leading-8">
+            I build backend systems and full-stack apps, mostly in Go, AWS, and
+            React/TypeScript. I like turning tricky infra problems into simple,
+            reliable tools.
+            <br />
+            Sometimes I ship features end-to-end; sometimes I dig into
+            observability and scaling.
+            <br />
+            This site is just a place to share what I’m working on.
+          </p>
+        </div>
       </div>
       <div>
         <div className="fixed bottom-0 right-[10%] w-[22rem] h-[22rem] bg-lime-700"></div>
