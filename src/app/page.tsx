@@ -13,17 +13,28 @@ export default function Home() {
             may.
           </h1>
         </div>
-        <div>
-          <p className="leading-8">
-            I build backend systems and full-stack apps, mostly in Go, AWS, and
-            React/TypeScript. I like turning tricky infra problems into simple,
-            reliable tools.
-            <br />
-            Sometimes I ship features end-to-end; sometimes I dig into
-            observability and scaling.
-            <br />
-            This site is just a place to share what I’m working on.
-          </p>
+        <div className="leading-8 flex flex-col gap-y-20">
+          <div id="about">
+            <p>
+              I build backend systems and full-stack apps, mostly in Go, AWS,
+              and React/TypeScript. I like turning tricky infra problems into
+              simple, reliable tools.
+              <br />
+              Sometimes I ship features end-to-end; sometimes I dig into
+              observability and scaling.
+              <br />
+              This site is just a place to share what I’m working on.
+            </p>
+          </div>
+          <div id="resume">
+            <p>This is my resume.</p>
+          </div>
+          <div id="contact">
+            <p>Hit me up for a chat?</p>
+          </div>
+          <div id="random">
+            <p>Non-work stuff I'm into</p>
+          </div>
         </div>
       </div>
       <div>
