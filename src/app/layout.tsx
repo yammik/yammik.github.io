@@ -25,7 +25,7 @@ export default function RootLayout({
 }>) {
   return (
     <>
-      <header className="p-12">
+      <header className="p-12 sticky">
         <nav>
           <div className="w-[6rem] h-[6rem] bg-lime-700 mb-4">
             image will go here
