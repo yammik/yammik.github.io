@@ -1,4 +1,5 @@
 "use client";
+// import resumePdf from "./may_kim_resume_2025.pdf";
 
 export default function Home() {
   return (
@@ -28,28 +29,75 @@ export default function Home() {
           <p>
             You can download my resume{" "}
             <a
-              href="https://yammik.github.io/public/may_kim_resume_2025.pdf"
+              href="https://raw.githubusercontent.com/yammik/yammik.github.io/93a5c29e15c5ae2dff005cb9d87b5de04bf98f84/public/may_kim_resume_2025.pdf"
               type="application/pdf"
-              target="_blank"
-              className="image fit"
             >
               here
             </a>
             .
           </p>
+          <br />
           <p>
-            I've published two scientific research papers in peer-reviewed
-            journals:
+            Unrelated to coding, I've published two scientific research papers
+            in peer-reviewed journals:
           </p>
           <ol>
-            <li>SC paper</li>
-            <li>Staphylococcus spp. paper</li>
+            <li>
+              <strong>
+                LB789 Stratum corneum lipid composition alters the heterogeneous
+                growth of staphylococcus aureus. (2016)
+              </strong>
+              <p>
+                DOI:
+                <a
+                  href="https://www.jidonline.org/article/S0022-202X(16)31194-0/fulltext"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  10.1016/j.jid.2016.05.040
+                </a>
+              </p>
+            </li>
+            <li>
+              <strong>
+                Heterogeneous ceramide distributions alter spatially resolved
+                growth of Staphylococcus aureus on human stratum corneum. (2018)
+              </strong>
+              <p>
+                DOI:
+                <a
+                  href="https://pubmed.ncbi.nlm.nih.gov/29669890/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  10.1098/rsif.2017.0848
+                </a>
+              </p>
+            </li>
+            <li>
+              <strong>
+                Effect of sphingosine and inoculum concentrations on
+                Staphylococcus aureus and Staphylococcus epidermidis biofilms.
+                (2023)
+              </strong>
+              <p>
+                DOI:
+                <a
+                  href="https://www.tandfonline.com/doi/full/10.1080/08927014.2023.2236584"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  10.1080/08927014.2023.2236584
+                </a>
+              </p>
+            </li>
           </ol>
-          And an illustration in a colleague's publication as well: (Lucia's
-          paper)
         </div>
         <div id="contact" className="h-[calc(100dvh-20rem)]">
-          <p>Hit me up for a chat?</p>
+          <p>
+            You can reach me at my email:{" "}
+            <a href="mailto:hello@maykim.me">hello@maykim.me</a>.
+          </p>
         </div>
         <div id="random" className="h-[calc(100dvh-20rem)]">
           <p>Non-work stuff I'm into</p>
