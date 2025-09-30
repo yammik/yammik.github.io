@@ -25,7 +25,18 @@ export default function Home() {
         </div>
 
         <div id="resume" className="h-[calc(100dvh-20rem)]">
-          <p>This is my resume.</p>
+          <p>
+            You can download my resume{" "}
+            <a
+              href="https://yammik.github.io/public/may_kim_resume_2025.pdf"
+              type="application/pdf"
+              target="_blank"
+              className="image fit"
+            >
+              here
+            </a>
+            .
+          </p>
           <p>
             I've published two scientific research papers in peer-reviewed
             journals:
