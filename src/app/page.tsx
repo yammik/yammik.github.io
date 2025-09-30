@@ -35,6 +35,7 @@ export default function Home() {
           <p>
             You can download my resume{" "}
             <a
+              className="underline"
               href="https://raw.githubusercontent.com/yammik/yammik.github.io/93a5c29e15c5ae2dff005cb9d87b5de04bf98f84/public/may_kim_resume_2025.pdf"
               type="application/pdf"
             >
@@ -56,6 +57,7 @@ export default function Home() {
               <p>
                 DOI:
                 <a
+                  className="underline"
                   href="https://www.jidonline.org/article/S0022-202X(16)31194-0/fulltext"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -73,6 +75,7 @@ export default function Home() {
               <p>
                 DOI:
                 <a
+                  className="underline"
                   href="https://pubmed.ncbi.nlm.nih.gov/29669890/"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -90,6 +93,7 @@ export default function Home() {
               <p>
                 DOI:
                 <a
+                  className="underline"
                   href="https://www.tandfonline.com/doi/full/10.1080/08927014.2023.2236584"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -103,13 +107,17 @@ export default function Home() {
         <div id="contact" className="h-[calc(100dvh-20rem)]">
           <p>
             You can reach me at my email:{" "}
-            <a href="mailto:hello@maykim.me">hello@maykim.me</a>.
+            <a className="underline" href="mailto:hello@maykim.me">
+              hello@maykim.me
+            </a>
+            .
           </p>
         </div>
         <div id="random" className="h-[calc(100dvh-20rem)]">
           <p>Non-work stuff I'm into</p>
           <p>I'm a pottery hobbyist. I like making moon jars.</p>
           <Image
+            className="mb-4"
             src="/static/images/mini_pots.jpeg"
             alt="miniature pottery"
             width={400}

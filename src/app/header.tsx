@@ -7,7 +7,7 @@ export default function Header() {
   const hash = useRouterHash();
 
   const liStyle = useCallback(
-    (target: string) => (hash === target ? "font-bold" : ""),
+    (target: string) => (hash === target ? "font-bold text-blue-600" : ""),
     [hash]
   );
 
