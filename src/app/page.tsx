@@ -1,10 +1,13 @@
 "use client";
+
+import Image from "next/image";
+
 // import resumePdf from "./may_kim_resume_2025.pdf";
 
 export default function Home() {
   return (
     <main className="w-2/3 p-12 pt-0 flex justify-between">
-      <div className="h-[calc(100dvh-20rem)] leading-8 gap-y-20 overflow-scroll no-scrollbar z-1 items-stretch scroll-smooth">
+      <div className="h-[calc(100dvh-20rem)] leading-8 gap-y-20 overflow-scroll no-scrollbar z-1 scroll-smooth">
         <div id="about" className="h-[calc(100dvh-20rem)]">
           <div className="pb-[4rem]">
             <h1 className="text-3xl font-black">
@@ -14,6 +17,9 @@ export default function Home() {
               <span className="block" />
               may.
             </h1>
+            <p>
+              (Under a bit of a construction, thanks for bearing with me. d:) )
+            </p>
           </div>
           <p>
             I build frontend and backend, and cloud infrastructure.
@@ -21,11 +27,11 @@ export default function Home() {
             My work includes shipping features end-to-end, with a side of
             observability and scaling.
             <br />
-            This site is just a place to share what I’m working on.
+            This site is just a place to share a bit of what I’m about.
           </p>
         </div>
 
-        <div id="resume" className="h-[calc(100dvh-20rem)]">
+        <div id="resume" className="min-h-[calc(100dvh-20rem)]">
           <p>
             You can download my resume{" "}
             <a
@@ -41,11 +47,11 @@ export default function Home() {
             Unrelated to coding, I've published two scientific research papers
             in peer-reviewed journals:
           </p>
-          <ol>
+          <ol className="text-xs leading-8">
             <li>
               <strong>
                 LB789 Stratum corneum lipid composition alters the heterogeneous
-                growth of staphylococcus aureus. (2016)
+                growth of <em>Staphylococcus aureus</em>. (2016)
               </strong>
               <p>
                 DOI:
@@ -61,7 +67,8 @@ export default function Home() {
             <li>
               <strong>
                 Heterogeneous ceramide distributions alter spatially resolved
-                growth of Staphylococcus aureus on human stratum corneum. (2018)
+                growth of <em>Staphylococcus aureus</em> on human stratum
+                corneum. (2018)
               </strong>
               <p>
                 DOI:
@@ -77,8 +84,8 @@ export default function Home() {
             <li>
               <strong>
                 Effect of sphingosine and inoculum concentrations on
-                Staphylococcus aureus and Staphylococcus epidermidis biofilms.
-                (2023)
+                <em>Staphylococcus aureus</em> and{" "}
+                <em>Staphylococcus epidermidis</em> biofilms. (2023)
               </strong>
               <p>
                 DOI:
@@ -101,6 +108,19 @@ export default function Home() {
         </div>
         <div id="random" className="h-[calc(100dvh-20rem)]">
           <p>Non-work stuff I'm into</p>
+          <p>I'm a pottery hobbyist. I like making moon jars.</p>
+          <Image
+            src="/static/images/mini_pots.jpeg"
+            alt="miniature pottery"
+            width={400}
+            height={400}
+          />
+          <Image
+            src="/static/images/moon_jars.jpeg"
+            alt="moon jars"
+            width={400}
+            height={400}
+          />
         </div>
       </div>
       <div>

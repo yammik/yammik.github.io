@@ -25,7 +25,7 @@ export default function Header() {
             </a>
           </li>
           <li className={liStyle("#resume")}>
-            <a href="/#resume">
+            <a href="/#resume" className="animate-bounce">
               <sup className={`text-xs mr-1 ${liStyle("#resume")}`}>2</sup>
               resume
             </a>
