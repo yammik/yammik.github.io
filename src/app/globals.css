@@ -33,8 +33,11 @@ body {
   }
 }
 
+a {
+  text-decoration: underline;
+}
+
 a:hover {
-  font-size: 5rem;
   font-weight: bold;
   text-transform: uppercase;
   color: #fff;

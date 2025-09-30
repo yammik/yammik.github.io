@@ -13,10 +13,12 @@ export default function Header() {
 
   return (
     <header className="p-12 sticky">
-      <div className="w-[6rem] h-[6rem] bg-lime-700 mb-4 hover:bg-sky-700">
+      <div className="w-[6rem] h-[6rem] bg-lime-700 mb-4 text-xs">
         image will go here
+        <p>maybe my face?</p>
+        <p>who knows</p>
       </div>
-      <nav className="hover:bg-sky-700">
+      <nav>
         <ul className="flex flex-wrap w-[12rem] gap gap-x-2 text-lg font-mono">
           <li className={liStyle("#about")}>
             <a href="/#about">
@@ -25,7 +27,7 @@ export default function Header() {
             </a>
           </li>
           <li className={liStyle("#resume")}>
-            <a href="/#resume" className="hover:bg-sky-700">
+            <a href="/#resume">
               <sup className={`text-xs mr-1 ${liStyle("#resume")}`}>2</sup>
               resume
             </a>

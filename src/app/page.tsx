@@ -7,7 +7,7 @@ import Image from "next/image";
 export default function Home() {
   return (
     <main className="w-2/3 p-12 pt-0 flex justify-between">
-      <div className="h-[calc(100dvh-20rem)] leading-8 gap-y-20 overflow-scroll no-scrollbar z-1 scroll-smooth">
+      <div className="grid h-[calc(100dvh-20rem)] leading-8 gap-y-32 overflow-scroll no-scrollbar z-1 scroll-smooth">
         <div id="about" className="h-[calc(100dvh-20rem)]">
           <div className="pb-[4rem]">
             <h1 className="text-3xl font-black">
