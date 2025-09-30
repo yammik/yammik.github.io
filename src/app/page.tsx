@@ -1,13 +1,11 @@
-import Image from "next/image";
-
 export default function Home() {
   return (
     <main className="w-2/3 p-12 pt-0 flex justify-between">
-      <div className="h-124 leading-8 flex flex-col gap-y-20 no-scrollbar">
+      <div className="h-[calc(100dvh-20rem)] leading-8 flex flex-col gap-y-20 overflow-scroll no-scrollbar">
         <div id="about">
           <div className="pb-[4rem]">
             <h1 className="text-3xl font-black">
-              hi –
+              hello,
               <span className="block" />
               i am
               <span className="block" />
