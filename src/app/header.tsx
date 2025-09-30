@@ -13,10 +13,10 @@ export default function Header() {
 
   return (
     <header className="p-12 sticky">
-      <div autoFocus className="w-[6rem] h-[6rem] bg-lime-700 mb-4">
+      <div className="w-[6rem] h-[6rem] bg-lime-700 mb-4 hover:bg-sky-700">
         image will go here
       </div>
-      <nav>
+      <nav className="hover:bg-sky-700">
         <ul className="flex flex-wrap w-[12rem] gap gap-x-2 text-lg font-mono">
           <li className={liStyle("#about")}>
             <a href="/#about">
@@ -25,7 +25,7 @@ export default function Header() {
             </a>
           </li>
           <li className={liStyle("#resume")}>
-            <a href="/#resume" className="animate-bounce">
+            <a href="/#resume" className="hover:bg-sky-700">
               <sup className={`text-xs mr-1 ${liStyle("#resume")}`}>2</sup>
               resume
             </a>
